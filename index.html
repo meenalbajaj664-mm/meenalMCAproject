@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MEE SHOP+</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">MEE SHOP+</h1>
+      <nav>
+        <button id="cart-button" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to MEE SHOP+</h2>
+      <p>Simple demo e-commerce site built with HTML, CSS & JavaScript.</p>
+    </section>
+
+    <section class="products" id="products">
+      <!-- Products will be rendered here -->
+    </section>
+  </main>
+
+  <!-- Cart modal -->
+  <div id="cart-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="close-cart">×</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items" class="cart-items"></ul>
+      <div class="cart-footer">
+        <div>Total: $<span id="cart-total">0.00</span></div>
+        <button id="checkout" class="btn primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> MEE SHOP+</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
